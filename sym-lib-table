@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Arduino_SDHD)(type Legacy)(uri "D:/h_da/Lecturs/SS-20-Systytem Driven Hardware Design/System, Amplifier, PCB – Development and Sequencing/__template/40_Implementation/work/10_HW/20_KiCad_LIB/Arduino_SDHD/Arduino_SDHD.lib")(options "")(descr ""))
+  (lib (name h-DA_LOGO_EESCHEMA)(type Legacy)(uri "D:/h_da/Lecturs/SS-20-Systytem Driven Hardware Design/System, Amplifier, PCB – Development and Sequencing/__template/40_Implementation/work/10_HW/20_KiCad_LIB/Arduino_SDHD/Arduino_SDHD.pretty/h-DA_LOGO_EESCHEMA.lib")(options "")(descr ""))
+)
