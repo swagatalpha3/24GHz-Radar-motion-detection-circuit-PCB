@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "24GHz Radar Movement Detector"
 Date "2020-05-5"
-Rev "R0.7"
+Rev "R0.8"
 Comp "Hochschule Darmstadt"
 Comment1 ""
 Comment2 "System Driven hardware Design"
@@ -523,12 +523,12 @@ Wire Notes Line
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5ECC74C0
-P 6450 5450
-F 0 "#FLG0101" H 6450 5525 50  0001 C CNN
-F 1 "PWR_FLAG" V 6450 5578 50  0000 L CNN
-F 2 "" H 6450 5450 50  0001 C CNN
-F 3 "~" H 6450 5450 50  0001 C CNN
-	1    6450 5450
+P 6450 5350
+F 0 "#FLG0101" H 6450 5425 50  0001 C CNN
+F 1 "PWR_FLAG" V 6450 5478 50  0000 L CNN
+F 2 "" H 6450 5350 50  0001 C CNN
+F 3 "~" H 6450 5350 50  0001 C CNN
+	1    6450 5350
 	0    1    1    0   
 $EndComp
 $Comp
@@ -613,12 +613,10 @@ Connection ~ 5550 4200
 Wire Wire Line
 	5950 4600 6350 4600
 Wire Wire Line
-	6450 5000 6450 5450
+	6450 5000 6450 5350
 Wire Wire Line
 	6450 5000 6500 5000
-Connection ~ 6450 5450
-Wire Wire Line
-	6450 5450 6450 6100
+Connection ~ 6450 5350
 Connection ~ 6350 4600
 Wire Wire Line
 	6350 4600 6500 4600
@@ -884,7 +882,6 @@ Wire Wire Line
 Connection ~ 6350 6650
 Wire Wire Line
 	6350 6650 6350 6950
-NoConn ~ 6150 7100
 Wire Wire Line
 	6500 4700 6500 4800
 Connection ~ 6500 4800
@@ -961,12 +958,69 @@ $EndComp
 $Comp
 L h-DA_LOGO_EESCHEMA:LOGO #G1
 U 1 1 5EBF6885
-P 10250 7200
-F 0 "#G1" H 10250 6445 60  0001 C CNN
-F 1 "LOGO" H 10250 7955 60  0001 C CNN
-F 2 "" H 10250 7200 50  0001 C CNN
-F 3 "" H 10250 7200 50  0001 C CNN
-	1    10250 7200
+P 10250 7050
+F 0 "#G1" H 10250 6295 60  0001 C CNN
+F 1 "LOGO" H 10250 7805 60  0001 C CNN
+F 2 "" H 10250 7050 50  0001 C CNN
+F 3 "" H 10250 7050 50  0001 C CNN
+	1    10250 7050
 	1    0    0    -1  
 $EndComp
+Text Notes 800  5550 0    50   ~ 10
+4th Order Bandpass Filter
+Text Notes 800  5850 0    50   ~ 0
+Stage 1 : Amplification 39.5dB, fl = 14.2Hz,fu = 496Hz\nStage 2 : Amplification 32.5dB, fl = 13.8Hz,fu = 505Hz\nOverall :Amplification  33.3dB,  fl = 14.2Hz,fu = 496Hz
+Text Notes 800  7400 0    50   ~ 10
+IPM 165 24HHz CW Radar
+Text Notes 800  7600 0    50   ~ 0
+Supply : 5V ,  30mA DC\nIF out offset : +- 300mV
+Text Notes 4900 2200 0    50   ~ 10
+POWER ON INDICATION
+Text Notes 6900 5550 0    50   ~ 10
+FreeSoc2 -PSoC5LP( CY8C58LP Family)  development board
+Text Notes 9700 5500 0    50   ~ 10
+Programmable Digital I/Os
+Wire Notes Line
+	5500 6750 6650 6750
+Wire Notes Line
+	6650 7600 5500 7600
+Text Notes 5500 7600 0    50   ~ 10
+Digital and Analogue ground\nJunction
+Wire Notes Line
+	5500 6750 5500 7600
+Wire Notes Line
+	6650 6750 6650 7600
+Wire Wire Line
+	6450 5350 6450 6100
+$Comp
+L power:GND #PWR05
+U 1 1 5EC1B227
+P 6150 7100
+F 0 "#PWR05" H 6150 6850 50  0001 C CNN
+F 1 "GND" H 6155 6927 50  0000 C CNN
+F 2 "" H 6150 7100 50  0001 C CNN
+F 3 "" H 6150 7100 50  0001 C CNN
+	1    6150 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5EC2314F
+P 5750 7350
+F 0 "#FLG01" H 5750 7425 50  0001 C CNN
+F 1 "PWR_FLAG" H 5700 7500 50  0000 C CNN
+F 2 "" H 5750 7350 50  0001 C CNN
+F 3 "~" H 5750 7350 50  0001 C CNN
+	1    5750 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 7350 5750 7400
+Wire Wire Line
+	5750 7400 6050 7400
+Wire Wire Line
+	6050 7400 6050 7100
+Wire Wire Line
+	6050 7100 6150 7100
+Connection ~ 6150 7100
 $EndSCHEMATC
