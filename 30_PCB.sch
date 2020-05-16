@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "24GHz Radar Movement Detector"
 Date "2020-05-5"
-Rev "R0.6"
+Rev "R0.7"
 Comp "Hochschule Darmstadt"
 Comment1 ""
 Comment2 "System Driven hardware Design"
@@ -52,7 +52,7 @@ U 1 1 5EBC2015
 P 4300 4300
 F 0 "R5" V 4093 4300 50  0000 C CNN
 F 1 "2.2k" V 4184 4300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4230 4300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4230 4300 50  0001 C CNN
 F 3 "~" H 4300 4300 50  0001 C CNN
 	1    4300 4300
 	0    1    1    0   
@@ -63,7 +63,7 @@ U 1 1 5EBC52B5
 P 2200 4400
 F 0 "R3" V 1993 4400 50  0000 C CNN
 F 1 "2.2k" V 2084 4400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2130 4400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2130 4400 50  0001 C CNN
 F 3 "~" H 2200 4400 50  0001 C CNN
 	1    2200 4400
 	0    1    1    0   
@@ -85,7 +85,7 @@ U 1 1 5EBC6575
 P 2000 2450
 F 0 "R1" H 2070 2496 50  0000 L CNN
 F 1 "1k" H 2070 2405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1930 2450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1930 2450 50  0001 C CNN
 F 3 "~" H 2000 2450 50  0001 C CNN
 	1    2000 2450
 	1    0    0    -1  
@@ -96,7 +96,7 @@ U 1 1 5EBC6F93
 P 2000 3100
 F 0 "R2" H 2070 3146 50  0000 L CNN
 F 1 "1k" H 2070 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1930 3100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1930 3100 50  0001 C CNN
 F 3 "~" H 2000 3100 50  0001 C CNN
 	1    2000 3100
 	1    0    0    -1  
@@ -107,7 +107,7 @@ U 1 1 5EBCE4F3
 P 4950 5050
 F 0 "R6" V 4743 5050 50  0000 C CNN
 F 1 "100k" V 4834 5050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4880 5050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4880 5050 50  0001 C CNN
 F 3 "~" H 4950 5050 50  0001 C CNN
 	1    4950 5050
 	0    1    1    0   
@@ -162,7 +162,7 @@ U 1 1 5EBD525C
 P 5700 4200
 F 0 "R8" V 5493 4200 50  0000 C CNN
 F 1 "100" V 5584 4200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5630 4200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5630 4200 50  0001 C CNN
 F 3 "~" H 5700 4200 50  0001 C CNN
 	1    5700 4200
 	0    1    1    0   
@@ -249,7 +249,7 @@ U 1 1 5EBC2C46
 P 3000 5050
 F 0 "R4" V 2793 5050 50  0000 C CNN
 F 1 "220k" V 2884 5050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2930 5050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2930 5050 50  0001 C CNN
 F 3 "~" H 3000 5050 50  0001 C CNN
 	1    3000 5050
 	0    1    1    0   
@@ -959,10 +959,10 @@ F 3 "" H 5100 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L h-DA_LOGO_EESCHEMA:LOGO #G?
+L h-DA_LOGO_EESCHEMA:LOGO #G1
 U 1 1 5EBF6885
 P 10250 7200
-F 0 "#G?" H 10250 6445 60  0001 C CNN
+F 0 "#G1" H 10250 6445 60  0001 C CNN
 F 1 "LOGO" H 10250 7955 60  0001 C CNN
 F 2 "" H 10250 7200 50  0001 C CNN
 F 3 "" H 10250 7200 50  0001 C CNN
